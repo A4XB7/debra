@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debra - Everything in One Place</title>
+    <link rel="stylesheet" href="all-in-one.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="sticky-header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">💝 Debra</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#tribute">Mother's Tribute</a></li>
+                    <li><a href="#jokes">Joke Generator</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HOME SECTION -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Welcome to Debra</h1>
+                    <p>Your one-stop destination for celebrations, laughter, and connections</p>
+                    <div class="cta-buttons">
+                        <a href="#tribute" class="btn btn-primary">💝 View Mother's Tribute</a>
+                        <a href="#jokes" class="btn btn-secondary">😂 Get a Joke</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MOTHER'S TRIBUTE SECTION -->
+        <section id="tribute" class="tribute-section">
+            <div class="petals" aria-hidden="true"></div>
+            <div class="container">
+                <div class="tribute-card">
+                    <div class="flower">🌸</div>
+                    <p class="small">A little celebration of you</p>
+                    <h2>Dear Debra's Mother <span>❤️</span></h2>
+
+                    <div class="photo-wrap">
+                        <img src="mother-photo.jpeg" alt="A special photo" onerror="this.src='https://via.placeholder.com/300?text=Mother+Photo'">
+                    </div>
+
+                    <h3>We are so happy you're doing well! 🌷</h3>
+                    <p class="message">
+                        After a difficult time, it is wonderful to see brighter days ahead.
+                        May every new day bring you more strength, peace, happiness and beautiful moments.
+                    </p>
+
+                    <div class="divider">✿ ✿ ✿</div>
+
+                    <section class="music">
+                        <h4>🎵 A song for you</h4>
+                        <p>A special song for this special person</p>
+                        <audio id="song" controls>
+                            <source src="song.mp3" type="audio/mpeg">
+                            Your browser does not support audio.
+                        </audio>
+                    </section>
+
+                    <p class="footer">With love, from your family and friends 💐</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- JOKE GENERATOR SECTION -->
+        <section id="jokes" class="jokes-section">
+            <div class="container">
+                <h2>😂 Random Joke Generator</h2>
+                <p class="section-subtitle">Get a laugh with random jokes powered by JokeAPI</p>
+                
+                <div class="joke-card">
+                    <div class="joke-display" id="jokeDisplay">
+                        <p class="loading">Click the button to get a joke!</p>
+                    </div>
+
+                    <div class="button-group">
+                        <button class="get-joke-btn" id="getJokeBtn">Get a Joke</button>
+                        <button class="copy-btn" id="copyBtn">Copy Joke</button>
+                    </div>
+
+                    <div class="controls-group">
+                        <div class="joke-type-selector">
+                            <label for="jokeType">Type:</label>
+                            <select id="jokeType">
+                                <option value="any">Any</option>
+                                <option value="single">Single Line</option>
+                                <option value="twopart">Two Part</option>
+                            </select>
+                        </div>
+
+                        <div class="category-selector">
+                            <label for="category">Category:</label>
+                            <select id="category">
+                                <option value="any">Any Category</option>
+                                <option value="general">General</option>
+                                <option value="knock-knock">Knock-Knock</option>
+                                <option value="programming">Programming</option>
+                                <option value="spooky">Spooky</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="joke-history">
+                        <h4>Recent Jokes</h4>
+                        <ul id="jokeHistory"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About Debra</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="feature-icon">🎨</div>
+                        <h3>Beautiful Design</h3>
+                        <p>Modern, elegant, and responsive interface that works on all devices</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">💝</div>
+                        <h3>Heartfelt Tribute</h3>
+                        <p>A special place to celebrate and honor important people in your life</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">😂</div>
+                        <h3>Fun Tools</h3>
+                        <p>Interactive joke generator with multiple categories and filters</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Fast & Smooth</h3>
+                        <p>Lightning-quick performance with smooth animations and transitions</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">📱</div>
+                        <h3>Mobile Friendly</h3>
+                        <p>Perfectly optimized for mobile, tablet, and desktop viewing</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🎵</div>
+                        <h3>Music Support</h3>
+                        <p>Integrated audio player for background music and special songs</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Debra. All rights reserved.</p>
+            <p>Made with ❤️ | <a href="https://github.com/A4XB7/debra">GitHub</a></p>
+        </div>
+    </footer>
+
+    <script src="all-in-one.js"></script>
+</body>
+</html>

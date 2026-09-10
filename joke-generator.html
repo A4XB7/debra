@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <link rel="stylesheet" href="joke-styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">Debra</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="joke-generator.html">Joke Generator</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="joke-section">
+            <div class="container">
+                <div class="joke-card">
+                    <h1>😂 Random Joke Generator</h1>
+                    <p class="subtitle">Get a laugh with random jokes powered by JokeAPI</p>
+                    
+                    <div class="joke-display" id="jokeDisplay">
+                        <p class="loading">Click the button to get a joke!</p>
+                    </div>
+
+                    <div class="button-group">
+                        <button class="get-joke-btn" id="getJokeBtn">Get a Joke</button>
+                        <button class="copy-btn" id="copyBtn">Copy Joke</button>
+                    </div>
+
+                    <div class="joke-type-selector">
+                        <label for="jokeType">Joke Type:</label>
+                        <select id="jokeType">
+                            <option value="any">Any</option>
+                            <option value="single">Single Line</option>
+                            <option value="twopart">Two Part</option>
+                        </select>
+                    </div>
+
+                    <div class="category-selector">
+                        <label for="category">Category:</label>
+                        <select id="category">
+                            <option value="any">Any Category</option>
+                            <option value="general">General</option>
+                            <option value="knock-knock">Knock-Knock</option>
+                            <option value="programming">Programming</option>
+                            <option value="spooky">Spooky</option>
+                        </select>
+                    </div>
+
+                    <div class="joke-history">
+                        <h3>Recent Jokes</h3>
+                        <ul id="jokeHistory"></ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <h2>Features</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <h3>🎲 Random Selection</h3>
+                        <p>Get completely random jokes every time</p>
+                    </div>
+                    <div class="feature">
+                        <h3>📂 Category Filter</h3>
+                        <p>Choose from different joke categories</p>
+                    </div>
+                    <div class="feature">
+                        <h3>✂️ Copy to Clipboard</h3>
+                        <p>Easily copy and share your favorite jokes</p>
+                    </div>
+                    <div class="feature">
+                        <h3>📜 Joke History</h3>
+                        <p>Keep track of jokes you've seen</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Debra Joke Generator. Powered by <a href="https://jokeapi.dev/">JokeAPI</a> | <a href="index.html">Back to Home</a></p>
+        </div>
+    </footer>
+
+    <script src="joke-script.js"></script>
+</body>
+</html>
